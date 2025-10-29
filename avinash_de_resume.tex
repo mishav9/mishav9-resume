@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in LaTeX (Based on Sourabh Bajaj Template)
+% Avinash Mishra
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small#2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  {\Large \textbf{Avinash Mishra}} & Email: \href{mailto:avvin@hotmail.com}{avvin@hotmail.com}\\
+  \href{https://www.linkedin.com/in/mishav9}{linkedin.com/in/mishav9} & Mobile: \href{tel:+919381292195}{+91-93812-92195} \\
+   & Hyderabad, Telangana, 500089 \\
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\section{Professional Summary}
+Results-driven Data Engineer with 6+ years of experience designing and optimizing data pipelines, enhancing deployment efficiency through DevOps practices, and transforming complex data sets into actionable insights. Consistently delivered 30\% improvement in pipeline performance and reduced data processing time by 40\%. Managed ETL processes handling over 100+ TB of data daily across cloud and on-prem platforms. Led cross-functional team, driving innovation and supporting data-driven strategies in product-based environments, particularly in telecom and healthcare domains. Implemented automation solutions resulting in a 25\% reduction in manual data management tasks.
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Verizon}{Hyderabad, India}
+{Member Technical Staff-III | Team: Delivery Accelerators}{2023 -- Present}
+\resumeItemListStart
+\item Spearheaded design and establishment of scalable CI/CD pipelines, reducing deployment time by 30\%.
+\item Migrated 50+ applications to containerized environments, improving resource utilization by 40\%.
+\item Engineered a robust security framework for artifact management, reducing vulnerabilities by 65\%.
+\item Pioneered Infrastructure as Code (IaC) practices, accelerating environment provisioning by 70\%.
+\resumeItemListEnd
+
+\resumeSubheading
+{Verizon}{Hyderabad, India}
+{Member Technical Staff-II | Team: Intelligent Edge Network (IEN)}{2021 -- 2023}
+\resumeItemListStart
+\item Architected real-time data ingestion system for network feeds, boosting data processing speed by 45\%.
+\item Fine-tuned batch and streaming flow, achieving 35\% improvement in overall performance.
+\item Developed an AI-driven alarm management system, reducing false positives by 60\%.
+\item Orchestrated migration of critical systems from Yahoo private cloud to GCP, achieving 99.99\% uptime.
+\resumeItemListEnd
+
+\resumeSubheading
+{Verizon}{Hyderabad, India}
+{Analyst - System Development | Team: Network Performance Intelligence (NPI)}{2019 -- 2021}
+\resumeItemListStart
+\item Engineered automated server maintenance scripts, reducing manual intervention by 75\%.
+\item Replaced OBIEE reports with Python automation, cutting processing time by 50\%.
+\item Implemented Apache NiFi for secure file transfers, reducing transfer errors by 90\%.
+\item Enhanced Pig Latin/Hive scripts, improving query performance by 40\%.
+\resumeItemListEnd
+
+\resumeSubheading
+{Accenture}{Hyderabad, India}
+{Application Developer Analyst | Major Healthcare Client}{2017 -- 2019}
+\resumeItemListStart
+\item Created and maintained Informatica workflows to refresh data marts from Oracle EBS to Teradata.
+\item Increased ETL performance by resolving bottlenecks and improving job reliability.
+\item Collaborated with stakeholders to address data issues aligned with business requirements.
+\resumeItemListEnd
+
+\resumeSubSubheading{Leading Telecom Client}{}
+\resumeItemListStart
+\item Utilized OBIEE dashboards for visualization, providing actionable insights.
+\item Developed and maintained ETL processes ensuring data accuracy and consistency.
+\item Improved ETL efficiency by optimizing schedules and automating tasks.
+\item Developed optimized Pig Latin/Hive scripts improving query performance by 40\%.
+\item \textbf{Tech Stack:} Informatica PowerCenter, Shell Scripting, SQL, Oracle Exadata.
+\resumeItemListEnd
+
+\resumeSubheading
+{Accenture}{Hyderabad, India}
+{Application Developer Associate}{2016 -- 2017}
+\resumeItemListStart
+\item Boosted production support processes by adding support documentation.
+\item Established automated email notification system improving team communication.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Kalinga University}{Odisha, India}
+{Bachelor of Technology in Electrical and Electronics Engineering}{2011 -- 2015}
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL PROFICIENCIES---------------
+\section{Technical Proficiencies}
+\resumeItemListStart
+\item \textbf{Cloud \& DevOps:} GCP, AWS, Yahoo Private Cloud, Docker, Kubernetes, Jenkins, Ansible, Terraform, GitLab-CI
+\item \textbf{Programming:} Python, Java, Scala, Shell Scripting
+\item \textbf{Big Data \& Analytics:} Apache Spark, Dataflow, Storm, Hive, Oozie, Airflow, SQL
+\item \textbf{ETL \& Reporting:} Informatica PowerCenter, OBIEE, Ab Initio
+\resumeItemListEnd
+
+%-----------CERTIFICATIONS-----------------
+\section{Certifications}
+\resumeItemListStart
+\item Google Professional Data Engineer (2024)
+\item SAFe 5 Practitioner
+\resumeItemListEnd
+
+%-----------AWARDS-----------------
+\section{Awards \& Recognition}
+\resumeItemListStart
+\item Verizon Spotlight Award (2020, 2022, 2024) for exceptional contributions to critical projects.
+\item Star Performer (2018) for outstanding performance and innovation.
+\resumeItemListEnd
+
+\end{document}
