@@ -1,0 +1,174 @@
+%-------------------------
+% Resume in LaTeX (Based on Sourabh Bajaj Template)
+% Avinash Mishra
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small#2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  {\Large \textbf{Avinash Mishra}} & Email: \href{mailto:avvin@hotmail.com}{avvin@hotmail.com}\\
+  \href{https://www.linkedin.com/in/mishav9}{linkedin.com/in/mishav9} & Mobile: \href{tel:+919381292195}{+91-93812-92195} \\
+   & Hyderabad, Telangana, 500089 \\
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\section{Professional Summary}
+Results-oriented Data Engineer with 7+ years of experience in building, optimizing, and monitoring large-scale data pipelines across GCP and Hadoop ecosystems. Skilled in implementing observability solutions to enhance data reliability, lineage visibility, and proactive monitoring. Adept in Spark, Scala, Python, Core Java, and Shell scripting with strong expertise in ETL tools like Informatica and Ab Initio. Proven ability to deliver scalable, automated, and observable data solutions that drive operational excellence and data-driven decision-making.
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Verizon}{Hyderabad, India}
+{Member Technical Staff-III | Team: Delivery Accelerators}{2023 -- Present}
+\resumeItemListStart
+\item Designed and implemented data observability frameworks across GCP and Hadoop environments to monitor data lineage, quality, and reliability across 50+ pipelines.
+\item Integrated observability metrics into CI/CD workflows to improve data visibility, reduce incident resolution time, and enhance SLAs.
+\item Automated provisioning using Infrastructure as Code (Terraform, Ansible), reducing setup effort by 70\%.
+\resumeItemListEnd
+\textbf{Tech Stack:} GCP, Hadoop, Apache Spark, Scala, Python, Core Java, Shell Scripting, Jenkins, Terraform, Ansible, Docker, Kubernetes, GitLab-CI.
+
+\resumeSubheading
+{Verizon}{Hyderabad, India}
+{Member Technical Staff-II | Team: Intelligent Edge Network (IEN)}{2021 -- 2023}
+\resumeItemListStart
+\item Architected real-time data ingestion pipelines for network telemetry, increasing data throughput by 45\%.
+\item Optimized batch and streaming flows using Spark and Airflow, achieving 35\% improvement in performance.
+\item Implemented automated alerting for data freshness and reliability, enhancing observability across pipelines.
+\item Led migration from Yahoo Private Cloud to GCP, achieving 99.99\% uptime and improved scalability.
+\resumeItemListEnd
+\textbf{Tech Stack:} GCP, Apache Spark, Airflow, Python, Scala, Hive, Oozie, SQL, Shell Scripting, Jenkins.
+
+\resumeSubheading
+{Verizon}{Hyderabad, India}
+{Analyst - System Development | Team: Network Performance Intelligence (NPI)}{2019 -- 2021}
+\resumeItemListStart
+\item Automated server maintenance and data validation processes, reducing manual effort by 75\%.
+\item Replaced OBIEE-based reporting with Python automation, cutting report generation time by 50\%.
+\item Implemented Apache NiFi for secure, automated data transfers, reducing transfer errors by 90\%.
+\item Enhanced Pig Latin and Hive scripts, improving query efficiency by 40\%.
+\resumeItemListEnd
+\textbf{Tech Stack:} Apache NiFi, Hive, Pig, Python, Shell Scripting, SQL, Jenkins, Linux.
+
+\resumeSubheading
+{Accenture}{Hyderabad, India}
+{Application Developer Analyst | Major Healthcare Client}{2017 -- 2019}
+\resumeItemListStart
+\item Developed Informatica workflows to synchronize Oracle EBS data to Teradata, ensuring timely and accurate updates.
+\item Enhanced ETL performance by resolving bottlenecks and optimizing workflow schedules.
+\item Collaborated with business teams to resolve data quality issues and improve reporting accuracy.
+\resumeItemListEnd
+\textbf{Tech Stack:} Informatica PowerCenter, Teradata, Oracle EBS, SQL, Shell Scripting, OBIEE.
+
+\resumeSubSubheading{Leading Telecom Client}{}
+\resumeItemListStart
+\item Developed optimized Hive and Pig scripts to enhance query performance by 40\%.
+\item Automated ETL job scheduling and validation to ensure consistent data refreshes.
+\item Delivered data insights via OBIEE dashboards, improving decision-making.
+\resumeItemListEnd
+\textbf{Tech Stack:} OBIEE, Informatica, Hive, Pig, Oracle Exadata, Shell Scripting, SQL.
+
+\resumeSubheading
+{Accenture}{Hyderabad, India}
+{Application Developer Associate}{2016 -- 2017}
+\resumeItemListStart
+\item Strengthened production support processes by introducing standardized documentation.
+\item Built automated notification scripts, improving communication efficiency across teams.
+\resumeItemListEnd
+\textbf{Tech Stack:} Informatica PowerCenter, Shell Scripting, Oracle SQL.
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Kalinga University}{Odisha, India}
+{Bachelor of Technology in Electrical and Electronics Engineering}{2011 -- 2015}
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------------
+\section{Certifications}
+\resumeItemListStart
+\item Google Professional Data Engineer (2024)
+\item SAFe 5 Practitioner
+\resumeItemListEnd
+
+%-----------AWARDS-----------------
+\section{Awards \& Recognition}
+\resumeItemListStart
+\item Verizon Spotlight Award (2020, 2022, 2024) for exceptional contributions to critical projects.
+\item Star Performer (2018) for outstanding performance and innovation.
+\resumeItemListEnd
+
+\end{document}
